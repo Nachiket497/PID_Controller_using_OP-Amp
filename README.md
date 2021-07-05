@@ -133,8 +133,10 @@ by adding few components to perform various mathematical operations.
 
 ****
 
-![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/invertingopamp.png) 
-
+<!-- ![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/invertingopamp.png)  -->
+<p align="center">
+  <img width="200" src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/invertingopamp.png">
+</p>
 ****
 **2) Differentiator**
 
@@ -147,16 +149,21 @@ by adding few components to perform various mathematical operations.
 
 -   The equation for the differentiator is as follows.
 
-    $$ V_o = -RC\frac{dv_{in}}{dt} $$
-    
+<!--     $$ V_o = -RC\frac{dv_{in}}{dt} $$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/differentator.png">
+</p>
+
 
 -   The minus sign in the formula indicates 180phase shift in the output
     waveform with respect to input signal.
 
 ****
 
-![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/differentiatoropamp.png) 
-
+<!-- ![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/differentiatoropamp.png)  -->
+<p align="center">
+  <img width="200" src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/differentiatoropamp.png">
+</p>
 ****
 
 **3) Integrator**
@@ -168,14 +175,20 @@ by adding few components to perform various mathematical operations.
     of integration, that is output waveform is the integral of the input
     waveform. The equation for the integrator is as follows.
 
-    $$V_o = -RC\int{dV_{in}} dt$$
+<!--     $$V_o = -RC\int{dV_{in}} dt$$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/integrator.png">
+</p>
 
 -   The circuit provides an output voltage which is proportional to the
     time integral of input and where is time constant of the integrator.
 
 ****
 
-![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/integratoropamp.png) [fig:pis1]
+<!-- ![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/integratoropamp.png) [fig:pis1] -->
+<p align="center">
+  <img width="200" src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/integratoropamp.png">
+</p>
 
 ****
 
@@ -190,7 +203,10 @@ by adding few components to perform various mathematical operations.
 
 ****
 
-![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/differenceopamp.png) [fig:pis1]
+<!-- ![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/differenceopamp.png) [fig:pis1] -->
+<p align="center">
+  <img width="200" src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/differenceopamp.png">
+</p>
 
 ****
 
@@ -209,8 +225,11 @@ by adding few components to perform various mathematical operations.
 
 ****
 
-![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/bufferopamp.png) [fig:pis1]
-
+<!-- ![](https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/bufferopamp.png){:height="36px" width="36px"} [fig:pis1] -->
+<p align="center">
+  <img width="200" src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/images/bufferopamp.png">
+</p>
+ 
 ****
 
 
@@ -228,7 +247,10 @@ Working
     terminal of the op-amp and the sensor reading to the inverting
     terminal, so we get
 
-    $$Error = Gain * ( Reference -  Sensor Reading )$$
+<!--     $$Error = Gain * ( Reference -  Sensor Reading )$$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/error.png">
+</p>
 
     For the accuracy purpose, we are using the gain of 10 in the
     difference amplifier. hence we get the required error as the input
@@ -239,7 +261,10 @@ Working
     Now , we have the error. for this part we are using the inverting op
     amp. which take the error and amplify it according to our need .
 
-    $$Proportional Gain = \frac{Rf}{R1}  Error$$
+<!--     $$Proportional Gain = \frac{Rf}{R1}  Error$$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/pg.png">
+</p>
 
     In this way, we get the Proportional gain using the inverting
     op-amp, but it should be noticed that it is inverted.
@@ -250,7 +275,10 @@ Working
     amp as a integrator with the input as Error, we get the integration
     of the error with respect to the time.
 
-    $$Integral Gain =  RC \int{Error} *dt$$
+<!--     $$Integral Gain =  RC \int{Error} *dt$$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/ig.png">
+</p>
 
     In this way, we get the Integral gain using the inverting op-amp,
     but it should be noticed that it is inverted.
@@ -261,7 +289,10 @@ Working
     as a differentiator with the input as Error, we get the
     differentiation of the error concerning the time.
 
-    $$Differential Gain = \frac{1}{ RC} \frac{d Error} {dt}$$
+<!--     $$Differential Gain = \frac{1}{ RC} \frac{d Error} {dt}$$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/dg.png">
+</p>
 
     In this way we get the Differential gain using the inverting op amp
     , but it should be notice that it is inverted.
@@ -272,7 +303,10 @@ Working
     using an op-amp as the inverting summing amplifier, we are using the
     inverting because ore gains are inverted in the last stage.
 
-    $$Overall Gain = - Rf (\frac{P.G}{R1}+\frac{I.G}{R2}+\frac{D.G}{R3})$$
+<!--     $$Overall Gain = - Rf (\frac{P.G}{R1}+\frac{I.G}{R2}+\frac{D.G}{R3})$$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/og.png">
+</p>
 
 -    **Inputs to the System**
 
@@ -333,13 +367,25 @@ It’s time-consuming. It takes a long time to achieve good performance.
 Summer amplifier is another application of OPAMP. It is used to get the
 weighted average of inputs.
 
-$$V_o = -R_f(\frac{V_1}{R_1}+\frac{V_2}{R_2}+\frac{V_3}{R_3})$$
+<!-- $$V_o = -R_f(\frac{V_1}{R_1}+\frac{V_2}{R_2}+\frac{V_3}{R_3})$$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/summer.png">
+</p>
 
 Where V1, V2, V3 will be outputs through P, I, D components. So, we can
 say,
-$K_p = \frac{-R_f}{R_1}$
-$K_i = \frac{-R_f}{R_2}$
-$K_d = \frac{-R_f}{R_3}$
+<!-- $K_p = \frac{-R_f}{R_1}$ -->
+<!-- $K_i = \frac{-R_f}{R_2}$ -->
+<!-- $K_d = \frac{-R_f}{R_3}$ -->
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/kp.png">
+</p>
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/ki.png">
+</p>
+<p align="center">
+  <img src="https://github.com/Nachiket497/PID_Controller_using_OP-Amp/blob/main/equations/kd.png">
+</p>
 
 Hence by setting Resistance values, we are setting parameters. In this
 way we can tune parameters.
@@ -352,8 +398,7 @@ Transient analysis
 
 ****
 Here we could paste analysed images only but, **A detailed video of this
-testing is recording and loaded over [This
-Link](https://drive.google.com/file/d/1OLOjiyjNxIE9lzGEMWcn49jJz9GvPYvm/view?usp=sharing).**
+testing is recording and loaded over [This Link](https://drive.google.com/file/d/1OLOjiyjNxIE9lzGEMWcn49jJz9GvPYvm/view?usp=sharing).**
 
 ![variation in Voltage across system with time. Reference voltage set
 here was 2V. It can be observed that voltage stablizes
