@@ -364,6 +364,7 @@ It’s time-consuming. It takes a long time to achieve good performance.
 ***How do we tune these parameters??***
 **Answer:**Inverting Summer amplifier
 
+
 Summer amplifier is another application of OPAMP. It is used to get the
 weighted average of inputs.
 
